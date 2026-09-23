@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dhellskieee Grid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="frame">
+  <aside class="side">
+    <a class="brand" href="#home"><span class="sq"></span>dhellskieee</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#home" data-link="home">Home</a>
+      <a href="#portfolio" data-link="portfolio">Portfolio</a>
+      <a href="#contact" data-link="contact">Contact</a>
+    </nav>
+    <p class="sig">malupet na hacker</p>
+  </aside>
+
+  <main id="main">
+    <!-- HOME -->
+    <section class="page grid" data-page="home">
+      <div class="cell wide">
+        <span class="k">name</span>
+        <h1>Dhellskieee</h1>
+        <p class="sub">Dhellmar Feliciano Mahilum · Computer Science Student</p>
+      </div>
+      <div class="cell">
+        <span class="k">about</span>
+        <p>I write code, build games and websites, and learn how systems break so I can make them safer.</p>
+      </div>
+      <div class="cell">
+        <span class="k">status</span>
+        <p><span class="on"></span>Open to collabs and internships</p>
+      </div>
+      <div class="cell wide">
+        <span class="k">interests</span>
+        <ul class="list" id="interests"></ul>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="page grid" data-page="portfolio" hidden>
+      <div class="cell wide">
+        <span class="k">portfolio</span>
+        <h1>Selected work</h1>
+        <p class="sub">Sample projects for now — real ones coming soon.</p>
+      </div>
+      <div id="work" class="contents"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="page grid" data-page="contact" hidden>
+      <div class="cell wide">
+        <span class="k">contact</span>
+        <h1>Say hello</h1>
+        <p class="sub">The fastest way to reach me is email.</p>
+      </div>
+      <a class="cell link" href="mailto:felicianomahilum@gmail.com">
+        <span class="k">gmail</span>
+        <span class="v">felicianomahilum@gmail.com</span>
+        <span class="go">↗</span>
+      </a>
+      <a class="cell link" href="https://github.com/dhellss" target="_blank" rel="noopener">
+        <span class="k">github</span>
+        <span class="v">github.com/dhellss</span>
+        <span class="go">↗</span>
+      </a>
+      <div class="cell wide">
+        <span class="k">local time</span>
+        <p class="v" id="clock">Manila · --:--</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
